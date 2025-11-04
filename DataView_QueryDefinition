@@ -1,0 +1,57 @@
+[
+  {
+    "Name": "Send_query",
+    "CustomerKey": "Send_query",
+    "TargetUpdateType": "Overwrite",
+    "TargetType": "DE",
+    "Target": {
+      "Name": "SENT_DATAVIEW",
+      "CustomerKey": "SENT_DATAVIEW"
+    },
+    "QueryText": "SELECT * FROM _Sent"
+  },
+  {
+    "Name": "Open_query",
+    "CustomerKey": "Open_query",
+    "TargetUpdateType": "Overwrite",
+    "TargetType": "DE",
+    "Target": {
+      "Name": "OPEN_DATAVIEW",
+      "CustomerKey": "OPEN_DATAVIEW"
+    },
+    "QueryText": "SELECT * FROM _Open"
+  },
+  {
+    "Name": "Click_query",
+    "CustomerKey": "Click_query",
+    "TargetUpdateType": "Overwrite",
+    "TargetType": "DE",
+    "Target": {
+      "Name": "CLICK_DATAVIEW",
+      "CustomerKey": "CLICK_DATAVIEW"
+    },
+    "QueryText": "SELECT * FROM _Click"
+  },
+  {
+    "Name": "Bounce_query",
+    "CustomerKey": "Bounce_query",
+    "TargetUpdateType": "Overwrite",
+    "TargetType": "DE",
+    "Target": {
+      "Name": "BOUNCE_DATAVIEW",
+      "CustomerKey": "BOUNCE_DATAVIEW"
+    },
+    "QueryText": "SELECT * FROM _Bounce"
+  },
+  {
+    "Name": "Unsubscribe_query",
+    "CustomerKey": "Unsubscribe_query",
+    "TargetUpdateType": "Overwrite",
+    "TargetType": "DE",
+    "Target": {
+      "Name": "UNSUBSCRIBE_DATAVIEW",
+      "CustomerKey": "UNSUBSCRIBE_DATAVIEW"
+    },
+    "QueryText": "SELECT * FROM _Unsubscribe"
+  }
+]
