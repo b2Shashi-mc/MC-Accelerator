@@ -1,0 +1,254 @@
+[
+     {
+            "CustomerKey": "JOB_DATAVIEW",
+            "Name": "JOB_DATAVIEW",
+            "Fields": [
+                { "CustomerKey": "AccountID", "Name": "AccountID", "FieldType": "Number", "IsPrimaryKey": false, "IsRequired": false },
+                { "CustomerKey": "AccountUserID", "Name": "AccountUserID", "FieldType": "Number", "IsPrimaryKey": false, "IsRequired": false },
+                { "CustomerKey": "JobID", "Name": "JobID", "FieldType": "Number", "IsPrimaryKey": true, "IsRequired": true },
+                { "CustomerKey": "EmailID", "Name": "EmailID", "FieldType": "Number", "IsPrimaryKey": false, "IsRequired": false },
+                { "CustomerKey": "FromName", "Name": "FromName", "FieldType": "Text", "MaxLength": 130, "IsPrimaryKey": false, "IsRequired": false },
+                { "CustomerKey": "FromEmail", "Name": "FromEmail", "FieldType": "EmailAddress", "IsPrimaryKey": false, "IsRequired": false },
+                { "CustomerKey": "SchedTime", "Name": "SchedTime", "FieldType": "Date", "IsPrimaryKey": false, "IsRequired": false },
+                { "CustomerKey": "PickupTime", "Name": "PickupTime", "FieldType": "Date", "IsPrimaryKey": false, "IsRequired": false },
+                { "CustomerKey": "DeliveredTime", "Name": "DeliveredTime", "FieldType": "Date", "IsPrimaryKey": false, "IsRequired": false },
+                { "CustomerKey": "TriggererSendDefinitionObjectID", "Name": "TriggererSendDefinitionObjectID", "FieldType": "Text", "MaxLength": 36, "IsPrimaryKey": false, "IsRequired": false },
+                { "CustomerKey": "TriggeredSendCustomerKey", "Name": "TriggeredSendCustomerKey", "FieldType": "Text", "MaxLength": 36, "IsPrimaryKey": false, "IsRequired": false },
+                { "CustomerKey": "EventID", "Name": "EventID", "FieldType": "Text", "MaxLength": 50, "IsPrimaryKey": false, "IsRequired": false },
+                { "CustomerKey": "IsMultipart", "Name": "IsMultipart", "FieldType": "Boolean", "IsPrimaryKey": false, "IsRequired": false },
+                { "CustomerKey": "JobType", "Name": "JobType", "FieldType": "Text", "MaxLength": 50, "IsPrimaryKey": false, "IsRequired": false },
+                { "CustomerKey": "JobStatus", "Name": "JobStatus", "FieldType": "Text", "MaxLength": 50, "IsPrimaryKey": false, "IsRequired": false },
+                { "CustomerKey": "ModifiedBy", "Name": "ModifiedBy", "FieldType": "Number", "IsPrimaryKey": false, "IsRequired": false },
+                { "CustomerKey": "ModifiedDate", "Name": "ModifiedDate", "FieldType": "Date", "IsPrimaryKey": false, "IsRequired": false },
+                { "CustomerKey": "EmailName", "Name": "EmailName", "FieldType": "Text", "MaxLength": 100, "IsPrimaryKey": false, "IsRequired": false },
+                { "CustomerKey": "EmailSubject", "Name": "EmailSubject", "FieldType": "Text", "MaxLength": 200, "IsPrimaryKey": false, "IsRequired": false },
+                { "CustomerKey": "IsWrapped", "Name": "IsWrapped", "FieldType": "Boolean", "IsPrimaryKey": false, "IsRequired": false },
+                { "CustomerKey": "TestEmailAddr", "Name": "TestEmailAddr", "FieldType": "EmailAddress", "IsPrimaryKey": false, "IsRequired": false },
+                { "CustomerKey": "Category", "Name": "Category", "FieldType": "Text", "MaxLength": 100, "IsPrimaryKey": false, "IsRequired": false },
+                { "CustomerKey": "BccEmail", "Name": "BccEmail", "FieldType": "EmailAddress", "IsPrimaryKey": false, "IsRequired": false },
+                { "CustomerKey": "OriginalSchedTime", "Name": "OriginalSchedTime", "FieldType": "Date", "IsPrimaryKey": false, "IsRequired": false },
+                { "CustomerKey": "CreatedDate", "Name": "CreatedDate", "FieldType": "Date", "IsPrimaryKey": false, "IsRequired": false },
+                { "CustomerKey": "CharacterSet", "Name": "CharacterSet", "FieldType": "Text", "MaxLength": 30, "IsPrimaryKey": false, "IsRequired": false },
+                { "CustomerKey": "IPAddress", "Name": "IPAddress", "FieldType": "Text", "MaxLength": 50, "IsPrimaryKey": false, "IsRequired": false },
+                { "CustomerKey": "SalesForceTotalSubscriberCount", "Name": "SalesForceTotalSubscriberCount", "FieldType": "Number", "IsPrimaryKey": false, "IsRequired": false },
+                { "CustomerKey": "SalesForceErrorSubscriberCount", "Name": "SalesForceErrorSubscriberCount", "FieldType": "Number", "IsPrimaryKey": false, "IsRequired": false },
+                { "CustomerKey": "SendType", "Name": "SendType", "FieldType": "Text", "MaxLength": 128, "IsPrimaryKey": false, "IsRequired": false },
+                { "CustomerKey": "DynamicEmailSubject", "Name": "DynamicEmailSubject", "FieldType": "Text", "IsPrimaryKey": false, "IsRequired": false },
+                { "CustomerKey": "SuppressTracking", "Name": "SuppressTracking", "FieldType": "Boolean", "IsPrimaryKey": false, "IsRequired": false },
+                { "CustomerKey": "SendClassificationType", "Name": "SendClassificationType", "FieldType": "Text", "MaxLength": 32, "IsPrimaryKey": false, "IsRequired": false },
+                { "CustomerKey": "SendClassification", "Name": "SendClassification", "FieldType": "Text", "MaxLength": 36, "IsPrimaryKey": false, "IsRequired": false },
+                { "CustomerKey": "ResolveLinksWithCurrentData", "Name": "ResolveLinksWithCurrentData", "FieldType": "Boolean", "IsPrimaryKey": false, "IsRequired": false },
+                { "CustomerKey": "EmailSendDefinition", "Name": "EmailSendDefinition", "FieldType": "Text", "MaxLength": 36, "IsPrimaryKey": false, "IsRequired": false },
+                { "CustomerKey": "DeduplicateByEmail", "Name": "DeduplicateByEmail", "FieldType": "Boolean", "IsPrimaryKey": false, "IsRequired": false }
+            ]
+        },
+        {
+            "CustomerKey": "SENT_DATAVIEW",
+            "Name": "SENT_DATAVIEW",
+            "Fields": [
+                { "CustomerKey": "AccountID", "Name": "AccountID", "FieldType": "Number", "IsPrimaryKey": false, "IsRequired": false },
+                { "CustomerKey": "OYBAccountID", "Name": "OYBAccountID", "FieldType": "Number", "IsPrimaryKey": false, "IsRequired": false },
+                { "CustomerKey": "JobID", "Name": "JobID", "FieldType": "Number", "IsPrimaryKey": false, "IsRequired": false },
+                { "CustomerKey": "ListID", "Name": "ListID", "FieldType": "Number", "IsPrimaryKey": false, "IsRequired": false },
+                { "CustomerKey": "BatchID", "Name": "BatchID", "FieldType": "Number", "IsPrimaryKey": false, "IsRequired": false },
+                { "CustomerKey": "SubscriberID", "Name": "SubscriberID", "FieldType": "Number", "IsPrimaryKey": false, "IsRequired": false },
+                { "CustomerKey": "SubscriberKey", "Name": "SubscriberKey", "FieldType": "Text", "MaxLength": 254, "IsPrimaryKey": false, "IsRequired": false },
+                { "CustomerKey": "EventDate", "Name": "EventDate", "FieldType": "Date", "IsPrimaryKey": false, "IsRequired": false },
+                { "CustomerKey": "Domain", "Name": "Domain", "FieldType": "Text", "MaxLength": 128, "IsPrimaryKey": false, "IsRequired": false },
+                { "CustomerKey": "TriggererSendDefinitionObjectID", "Name": "TriggererSendDefinitionObjectID", "FieldType": "Text", "MaxLength": 36, "IsPrimaryKey": false, "IsRequired": false },
+                { "CustomerKey": "TriggeredSendCustomerKey", "Name": "TriggeredSendCustomerKey", "FieldType": "Text", "MaxLength": 36, "IsPrimaryKey": false, "IsRequired": false }
+            ]
+        },
+        {
+            "CustomerKey": "OPEN_DATAVIEW",
+            "Name": "OPEN_DATAVIEW",
+            "Fields": [
+                { "CustomerKey":"AccountID", "Name": "AccountID", "FieldType": "Number", "IsPrimaryKey": false, "IsRequired": false },
+                { "CustomerKey":"OYBAccountID", "Name": "OYBAccountID", "FieldType": "Number", "IsPrimaryKey": false, "IsRequired": false },
+                { "CustomerKey":"JobID", "Name": "JobID", "FieldType": "Number", "IsPrimaryKey": false, "IsRequired": false },
+                { "CustomerKey":"ListID", "Name": "ListID", "FieldType": "Number", "IsPrimaryKey": false, "IsRequired": false },
+                { "CustomerKey":"BatchID", "Name": "BatchID", "FieldType": "Number", "IsPrimaryKey": false, "IsRequired": false },
+                { "CustomerKey":"SubscriberID", "Name": "SubscriberID", "FieldType": "Number", "IsPrimaryKey": false, "IsRequired": false },
+                { "CustomerKey":"SubscriberKey", "Name": "SubscriberKey", "FieldType": "Text", "MaxLength": 254, "IsPrimaryKey": false, "IsRequired": false },
+                { "CustomerKey":"EventDate", "Name": "EventDate", "FieldType": "Date", "IsPrimaryKey": false, "IsRequired": false },
+                { "CustomerKey":"Domain", "Name": "Domain", "FieldType": "Text", "MaxLength": 128, "IsPrimaryKey": false, "IsRequired": false },
+                { "CustomerKey":"TriggererSendDefinitionObjectID", "Name": "TriggererSendDefinitionObjectID", "FieldType": "Text", "MaxLength": 36, "IsPrimaryKey": false, "IsRequired": false },
+                { "CustomerKey":"TriggeredSendCustomerKey", "Name": "TriggeredSendCustomerKey", "FieldType": "Text", "MaxLength": 36, "IsPrimaryKey": false, "IsRequired": false },
+                { "CustomerKey":"IsUnique", "Name": "IsUnique", "FieldType": "Boolean", "IsPrimaryKey": false, "IsRequired": false }
+            ]
+        },
+        {
+            "CustomerKey":"CLICK_DATAVIEW",
+            "Name": "CLICK_DATAVIEW",
+            "Fields": [
+                { "CustomerKey":"AccountID", "Name": "AccountID", "FieldType": "Number", "IsPrimaryKey": false, "IsRequired": false },
+                { "CustomerKey":"OYBAccountID", "Name": "OYBAccountID", "FieldType": "Number", "IsPrimaryKey": false, "IsRequired": false },
+                { "CustomerKey":"JobID", "Name": "JobID", "FieldType": "Number", "IsPrimaryKey": false, "IsRequired": false },
+                { "CustomerKey":"ListID", "Name": "ListID", "FieldType": "Number", "IsPrimaryKey": false, "IsRequired": false },
+                { "CustomerKey":"BatchID", "Name": "BatchID", "FieldType": "Number", "IsPrimaryKey": false, "IsRequired": false },
+                { "CustomerKey":"SubscriberID", "Name": "SubscriberID", "FieldType": "Number", "IsPrimaryKey": false, "IsRequired": false },
+                { "CustomerKey":"SubscriberKey", "Name": "SubscriberKey", "FieldType": "Text", "MaxLength": 254, "IsPrimaryKey": false, "IsRequired": false },
+                { "CustomerKey":"EventDate", "Name": "EventDate", "FieldType": "Date", "IsPrimaryKey": false, "IsRequired": false },
+                { "CustomerKey":"Domain", "Name": "Domain", "FieldType": "Text", "MaxLength": 128, "IsPrimaryKey": false, "IsRequired": false },
+                { "CustomerKey":"TriggererSendDefinitionObjectID", "Name": "TriggererSendDefinitionObjectID", "FieldType": "Text", "MaxLength": 36, "IsPrimaryKey": false, "IsRequired": false },
+                { "CustomerKey":"TriggeredSendCustomerKey", "Name": "TriggeredSendCustomerKey", "FieldType": "Text", "MaxLength": 36, "IsPrimaryKey": false, "IsRequired": false },
+                { "CustomerKey":"IsUnique", "Name": "IsUnique", "FieldType": "Boolean", "IsPrimaryKey": false, "IsRequired": false },
+                { "CustomerKey":"URL", "Name": "URL", "FieldType": "Text", "MaxLength": 900, "IsPrimaryKey": false, "IsRequired": false },
+                { "CustomerKey":"LinkName", "Name": "LinkName", "FieldType": "Text", "MaxLength": 1024, "IsPrimaryKey": false, "IsRequired": false },
+                { "CustomerKey":"LinkContent", "Name": "LinkContent", "FieldType": "Text", "IsPrimaryKey": false, "IsRequired": false }
+            ]
+        },
+        {
+            "CustomerKey":"CLICK_DATAVIEW",
+            "Name": "CLICK_DATAVIEW",
+            "Fields": [
+                { "CustomerKey":"AccountID", "Name": "AccountID", "FieldType": "Number", "IsPrimaryKey": false, "IsRequired": false },
+                { "CustomerKey":"OYBAccountID", "Name": "OYBAccountID", "FieldType": "Number", "IsPrimaryKey": false, "IsRequired": false },
+                { "CustomerKey":"JobID", "Name": "JobID", "FieldType": "Number", "IsPrimaryKey": false, "IsRequired": false },
+                { "CustomerKey":"ListID", "Name": "ListID", "FieldType": "Number", "IsPrimaryKey": false, "IsRequired": false },
+                { "CustomerKey":"BatchID", "Name": "BatchID", "FieldType": "Number", "IsPrimaryKey": false, "IsRequired": false },
+                { "CustomerKey":"SubscriberID", "Name": "SubscriberID", "FieldType": "Number", "IsPrimaryKey": false, "IsRequired": false },
+                { "CustomerKey":"SubscriberKey", "Name": "SubscriberKey", "FieldType": "Text", "MaxLength": 254, "IsPrimaryKey": false, "IsRequired": false },
+                { "CustomerKey":"EventDate", "Name": "EventDate", "FieldType": "Date", "IsPrimaryKey": false, "IsRequired": false },
+                { "CustomerKey":"Domain", "Name": "Domain", "FieldType": "Text", "MaxLength": 128, "IsPrimaryKey": false, "IsRequired": false },
+                { "CustomerKey":"TriggererSendDefinitionObjectID", "Name": "TriggererSendDefinitionObjectID", "FieldType": "Text", "MaxLength": 36, "IsPrimaryKey": false, "IsRequired": false },
+                { "CustomerKey":"TriggeredSendCustomerKey", "Name": "TriggeredSendCustomerKey", "FieldType": "Text", "MaxLength": 36, "IsPrimaryKey": false, "IsRequired": false },
+                { "CustomerKey":"IsUnique", "Name": "IsUnique", "FieldType": "Boolean", "IsPrimaryKey": false, "IsRequired": false },
+                { "CustomerKey":"URL", "Name": "URL", "FieldType": "Text", "MaxLength": 900, "IsPrimaryKey": false, "IsRequired": false },
+                { "CustomerKey":"LinkName", "Name": "LinkName", "FieldType": "Text", "MaxLength": 1024, "IsPrimaryKey": false, "IsRequired": false },
+                { "CustomerKey":"LinkContent", "Name": "LinkContent", "FieldType": "Text", "IsPrimaryKey": false, "IsRequired": false }
+            ]
+        },
+        {
+            "CustomerKey": "BOUNCE_DATAVIEW",
+            "Name": "BOUNCE_DATAVIEW",
+            "Fields": [
+                { "CustomerKey":"AccountID", "Name": "AccountID", "FieldType": "Number", "IsPrimaryKey": false, "IsRequired": false },
+                { "CustomerKey":"OYBAccountID", "Name": "OYBAccountID", "FieldType": "Number", "IsPrimaryKey": false, "IsRequired": false },
+                { "CustomerKey":"JobID", "Name": "JobID", "FieldType": "Number", "IsPrimaryKey": false, "IsRequired": false },
+                { "CustomerKey":"ListID", "Name": "ListID", "FieldType": "Number", "IsPrimaryKey": false, "IsRequired": false },
+                { "CustomerKey":"BatchID", "Name": "BatchID", "FieldType": "Number", "IsPrimaryKey": false, "IsRequired": false },
+                { "CustomerKey":"SubscriberID", "Name": "SubscriberID", "FieldType": "Number", "IsPrimaryKey": false, "IsRequired": false },
+                { "CustomerKey":"SubscriberKey", "Name": "SubscriberKey", "FieldType": "Text", "MaxLength": 254, "IsPrimaryKey": false, "IsRequired": false },
+                { "CustomerKey":"EventDate", "Name": "EventDate", "FieldType": "Date", "IsPrimaryKey": false, "IsRequired": false },
+                { "CustomerKey":"Domain", "Name": "Domain", "FieldType": "Text", "MaxLength": 128, "IsPrimaryKey": false, "IsRequired": false },
+                { "CustomerKey":"TriggererSendDefinitionObjectID", "Name": "TriggererSendDefinitionObjectID", "FieldType": "Text", "MaxLength": 36, "IsPrimaryKey": false, "IsRequired": false },
+                { "CustomerKey":"TriggeredSendCustomerKey", "Name": "TriggeredSendCustomerKey", "FieldType": "Text", "MaxLength": 36, "IsPrimaryKey": false, "IsRequired": false },
+                { "CustomerKey":"IsUnique", "Name": "IsUnique", "FieldType": "Boolean", "IsPrimaryKey": false, "IsRequired": false },
+                { "CustomerKey":"BounceCategoryID", "Name": "BounceCategoryID", "FieldType": "Number", "IsPrimaryKey": false, "IsRequired": false },
+                { "CustomerKey":"BounceCategory", "Name": "BounceCategory", "FieldType": "Text", "MaxLength": 50, "IsPrimaryKey": false, "IsRequired": false },
+                { "CustomerKey":"BounceSubcategoryID", "Name": "BounceSubcategoryID", "FieldType": "Number", "IsPrimaryKey": false, "IsRequired": false },
+                { "CustomerKey":"BounceSubcategory", "Name": "BounceSubcategory", "FieldType": "Text", "MaxLength": 50, "IsPrimaryKey": false, "IsRequired": false },
+                { "CustomerKey":"BounceTypeID", "Name": "BounceTypeID", "FieldType": "Number", "IsPrimaryKey": false, "IsRequired": false },
+                { "CustomerKey":"BounceType", "Name": "BounceType", "FieldType": "Text", "MaxLength": 50, "IsPrimaryKey": false, "IsRequired": false },
+                { "CustomerKey":"SMTPBounceReason", "Name": "SMTPBounceReason", "FieldType": "Text", "IsPrimaryKey": false, "IsRequired": false },
+                { "CustomerKey":"SMTPMessage", "Name": "SMTPMessage", "FieldType": "Text", "IsPrimaryKey": false, "IsRequired": false },
+                { "CustomerKey":"SMTPCode", "Name": "SMTPCode", "FieldType": "Number", "IsPrimaryKey": false, "IsRequired": false },
+                { "CustomerKey":"IsFalseBounce", "Name": "IsFalseBounce", "FieldType": "Boolean", "IsPrimaryKey": false, "IsRequired": false }
+            ]
+        },
+        {
+            "CustomerKey": "COMPLAINT_DATAVIEW",
+            "Name": "COMPLAINT_DATAVIEW",
+            "Fields": [
+                { "CustomerKey":"AccountID", "Name": "AccountID", "FieldType": "Number", "IsPrimaryKey": false, "IsRequired": false },
+                { "CustomerKey":"OYBAccountID", "Name": "OYBAccountID", "FieldType": "Number", "IsPrimaryKey": false, "IsRequired": false },
+                { "CustomerKey":"JobID", "Name": "JobID", "FieldType": "Number", "IsPrimaryKey": false, "IsRequired": false },
+                { "CustomerKey":"ListID", "Name": "ListID", "FieldType": "Number", "IsPrimaryKey": false, "IsRequired": false },
+                { "CustomerKey":"BatchID", "Name": "BatchID", "FieldType": "Number", "IsPrimaryKey": false, "IsRequired": false },
+                { "CustomerKey":"SubscriberID", "Name": "SubscriberID", "FieldType": "Number", "IsPrimaryKey": false, "IsRequired": false },
+                { "CustomerKey":"SubscriberKey", "Name": "SubscriberKey", "FieldType": "Text", "MaxLength": 254, "IsPrimaryKey": false, "IsRequired": false },
+                { "CustomerKey":"EventDate", "Name": "EventDate", "FieldType": "Date", "IsPrimaryKey": false, "IsRequired": false },
+                { "CustomerKey":"Domain", "Name": "Domain", "FieldType": "Text", "MaxLength": 128, "IsPrimaryKey": false, "IsRequired": false },
+                { "CustomerKey":"IsUnique", "Name": "IsUnique", "FieldType": "Boolean", "IsPrimaryKey": false, "IsRequired": false }
+            ]
+        },
+        {
+            "CustomerKey": "UNSUBSCRIBE_DATAVIEW",
+            "Name": "UNSUBSCRIBE_DATAVIEW",
+            "Fields": [
+                { "CustomerKey":"AccountID", "Name": "AccountID", "FieldType": "Number", "IsPrimaryKey": false, "IsRequired": false },
+                { "CustomerKey":"OYBAccountID", "Name": "OYBAccountID", "FieldType": "Number", "IsPrimaryKey": false, "IsRequired": false },
+                { "CustomerKey":"JobID", "Name": "JobID", "FieldType": "Number", "IsPrimaryKey": false, "IsRequired": false },
+                { "CustomerKey":"ListID", "Name": "ListID", "FieldType": "Number", "IsPrimaryKey": false, "IsRequired": false },
+                { "CustomerKey":"BatchID", "Name": "BatchID", "FieldType": "Number", "IsPrimaryKey": false, "IsRequired": false },
+                { "CustomerKey":"SubscriberID", "Name": "SubscriberID", "FieldType": "Number", "IsPrimaryKey": false, "IsRequired": false },
+                { "CustomerKey":"SubscriberKey", "Name": "SubscriberKey", "FieldType": "Text", "MaxLength": 254, "IsPrimaryKey": false, "IsRequired": false },
+                { "CustomerKey":"EventDate", "Name": "EventDate", "FieldType": "Date", "IsPrimaryKey": false, "IsRequired": false },
+                { "CustomerKey":"Domain", "Name": "Domain", "FieldType": "Text", "MaxLength": 128, "IsPrimaryKey": false, "IsRequired": false },
+                { "CustomerKey":"IsUnique", "Name": "IsUnique", "FieldType": "Boolean", "IsPrimaryKey": false, "IsRequired": false }
+            ]
+        },
+        {
+            "CustomerKey": "SUBSCRIBERS_DATAVIEW",
+            "Name": "SUBSCRIBERS_DATAVIEW",
+            "Fields": [
+                { "CustomerKey":"SubscriberID", "Name": "SubscriberID", "FieldType": "Number", "IsPrimaryKey": true, "IsRequired": true },
+                { "CustomerKey":"SubscriberKey", "Name": "SubscriberKey", "FieldType": "Text", "MaxLength": 254, "IsPrimaryKey": false, "IsRequired": false },
+                { "CustomerKey":"DateUndeliverable", "Name": "DateUndeliverable", "FieldType": "Date", "IsPrimaryKey": false, "IsRequired": false },
+                { "CustomerKey":"DateJoined", "Name": "DateJoined", "FieldType": "Date", "IsPrimaryKey": false, "IsRequired": false },
+                { "CustomerKey":"DateUnsubscribed", "Name": "DateUnsubscribed", "FieldType": "Date", "IsPrimaryKey": false, "IsRequired": false },
+                { "CustomerKey":"Domain", "Name": "Domain", "FieldType": "Text", "MaxLength": 254, "IsPrimaryKey": false, "IsRequired": false },
+                { "CustomerKey":"EmailAddress", "Name": "EmailAddress", "FieldType": "EmailAddress", "IsPrimaryKey": false, "IsRequired": false },
+                { "CustomerKey":"BounceCount", "Name": "BounceCount", "FieldType": "Number", "IsPrimaryKey": false, "IsRequired": false },
+                { "CustomerKey":"SubscriberType", "Name": "SubscriberType", "FieldType": "Text", "MaxLength": 100, "IsPrimaryKey": false, "IsRequired": false },
+                { "CustomerKey":"Status", "Name": "Status", "FieldType": "Text", "MaxLength": 12, "IsPrimaryKey": false, "IsRequired": false },
+                { "CustomerKey":"Locale", "Name": "Locale", "FieldType": "Locale", "IsPrimaryKey": false, "IsRequired": false }
+            ]
+        },
+        {
+            "CustomerKey": "LISTSUBSCRIBERS_DATAVIEW",
+            "Name": "LISTSUBSCRIBERS_DATAVIEW",
+            "Fields": [
+                { "CustomerKey":"SubscriberID", "Name": "SubscriberID", "FieldType": "Number", "IsPrimaryKey": true, "IsRequired": true },
+                { "CustomerKey":"SubscriberKey", "Name": "SubscriberKey", "FieldType": "Text", "MaxLength": 254, "IsPrimaryKey": false, "IsRequired": false },
+                { "CustomerKey":"AddedBy", "Name": "AddedBy", "FieldType": "Text", "MaxLength": 254, "IsPrimaryKey": false, "IsRequired": false },
+                { "CustomerKey":"AddMethod", "Name": "AddMethod", "FieldType": "Text", "MaxLength": 50, "IsPrimaryKey": false, "IsRequired": false },
+                { "CustomerKey":"CreatedDate", "Name": "CreatedDate", "FieldType": "Date", "IsPrimaryKey": false, "IsRequired": false },
+                { "CustomerKey":"DateUnsubscribed", "Name": "DateUnsubscribed", "FieldType": "Date", "IsPrimaryKey": false, "IsRequired": false },
+                { "CustomerKey":"EmailAddress", "Name": "EmailAddress", "FieldType": "EmailAddress", "IsPrimaryKey": false, "IsRequired": false },
+                { "CustomerKey":"ListID", "Name": "ListID", "FieldType": "Number", "IsPrimaryKey": false, "IsRequired": false },
+                { "CustomerKey":"ListName", "Name": "ListName", "FieldType": "Text", "MaxLength": 100, "IsPrimaryKey": false, "IsRequired": false },
+                { "CustomerKey":"ListType", "Name": "ListType", "FieldType": "Text", "MaxLength": 50, "IsPrimaryKey": false, "IsRequired": false },
+                { "CustomerKey":"Status", "Name": "Status", "FieldType": "Text", "MaxLength": 50, "IsPrimaryKey": false, "IsRequired": false },
+                { "CustomerKey":"SubscriberType", "Name": "SubscriberType", "FieldType": "Text", "MaxLength": 100, "IsPrimaryKey": false, "IsRequired": false }
+            ]
+        },
+        {
+            "CustomerKey": "BUUNSUBSCRIBE_DATAVIEW",
+            "Name": "BUUNSUBSCRIBE_DATAVIEW",
+            "Fields": [
+                { "CustomerKey": "BusinessUnitID", "Name": "BusinessUnitID", "FieldType": "Number", "IsPrimaryKey": false, "IsRequired": false },
+                { "CustomerKey": "SubscriberID", "Name": "SubscriberID", "FieldType": "Number", "IsPrimaryKey": false, "IsRequired": false },
+                { "CustomerKey": "SubscriberKey", "Name": "SubscriberKey", "FieldType": "Text", "MaxLength": 254, "IsPrimaryKey": false, "IsRequired": false },
+                { "CustomerKey": "UnsubDateUTC", "Name": "UnsubDateUTC", "FieldType": "Date", "IsPrimaryKey": false, "IsRequired": false },
+                { "CustomerKey": "UnsubReason", "Name": "UnsubReason", "FieldType": "Text", "MaxLength": 100, "IsPrimaryKey": false, "IsRequired": false }
+            ]
+        },
+        {
+            "CustomerKey": "JOURNEY_DATAVIEW",
+            "Name": "JOURNEY_DATAVIEW",
+            "Fields": [
+                { "CustomerKey": "VersionID", "Name": "VersionID", "FieldType": "Text", "MaxLength": 36, "IsPrimaryKey": false, "IsRequired": true },
+                { "CustomerKey": "JourneyID", "Name": "JourneyID", "FieldType": "Text", "MaxLength": 36, "IsPrimaryKey": false, "IsRequired": true },
+                { "CustomerKey": "JourneyName", "Name": "JourneyName", "FieldType": "Text", "MaxLength": 200, "IsPrimaryKey": false, "IsRequired": true },
+                { "CustomerKey": "VersionNumber", "Name": "VersionNumber", "FieldType": "Number", "IsPrimaryKey": false, "IsRequired": true },
+                { "CustomerKey": "CreatedDate", "Name": "CreatedDate", "FieldType": "Date", "IsPrimaryKey": false, "IsRequired": true },
+                { "CustomerKey": "LastPublishedDate", "Name": "LastPublishedDate", "FieldType": "Date", "IsPrimaryKey": false, "IsRequired": false },
+                { "CustomerKey": "ModifiedDate", "Name": "ModifiedDate", "FieldType": "Date", "IsPrimaryKey": false, "IsRequired": false },
+                { "CustomerKey": "JourneyStatus", "Name": "JourneyStatus", "FieldType": "Text", "MaxLength": 100, "IsPrimaryKey": false, "IsRequired": true }
+            ]
+        },
+        {
+            "CustomerKey": "JOURNEYACTIVITY_DATAVIEW",
+            "Name": "JOURNEYACTIVITY_DATAVIEW",
+            "Fields": [
+                { "CustomerKey": "VersionID", "Name": "VersionID", "FieldType": "Text", "MaxLength": 36, "IsPrimaryKey": false, "IsRequired": true },
+                { "CustomerKey": "ActivityID", "Name": "ActivityID", "FieldType": "Text", "MaxLength": 36, "IsPrimaryKey": false, "IsRequired": true },
+                { "CustomerKey": "ActivityName", "Name": "ActivityName", "FieldType": "Text", "MaxLength": 200, "IsPrimaryKey": false, "IsRequired": true },
+                { "CustomerKey": "ActivityExternalKey", "Name": "ActivityExternalKey", "FieldType": "Text", "MaxLength": 200, "IsPrimaryKey": false, "IsRequired": false },
+                { "CustomerKey": "JourneyActivityObjectID", "Name": "JourneyActivityObjectID", "FieldType": "Text", "MaxLength": 36, "IsPrimaryKey": false, "IsRequired": false },
+                { "CustomerKey": "ActivityType", "Name": "ActivityType", "FieldType": "Text", "MaxLength": 512, "IsPrimaryKey": false, "IsRequired": true }
+            ]
+        }
+]
