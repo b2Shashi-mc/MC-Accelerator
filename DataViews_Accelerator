@@ -1,0 +1,33 @@
+<script runat="server">
+Platform.Load("core", "1");
+
+try {
+    var api = new Script.Util.WSProxy();
+        
+    api.setClientId({
+        ID: Platform.Function.AuthenticatedMemberID()
+    });
+
+    var url = "JSON_Code_Resource_URl";
+    var headerNames = [];
+    var headerValues = [];
+    var response = HTTP.Get(url, headerNames, headerValues);
+
+    // Parse the JSON string into an array
+    var jsonData = Platform.Function.ParseJSON(response.Content);
+
+    // Create Data Extensions in batch
+    var result = api.createBatch("DataExtension", jsonData);
+
+    if(result.Status === 'OK' && result.RequestID) {
+        Write(Stringify(result));
+    } else {
+        Write("WSProxy createBatch failed. Status: " + result.Status);
+    }
+
+} catch (ex) {
+    Write("Error message: " + ex.message + "<br>");
+    Write("Description: " + ex.description + "<br>");
+    Write("Jint Exception: " + ex.jintException + "<br>");
+}
+</script>
